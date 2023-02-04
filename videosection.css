@@ -1,0 +1,658 @@
+/*================================================================================================================
+
+        DEFAULT VALUES:
+
+        Font Family                 :   "Roboto Condensed", sans-serif
+        
+        Greenish Blue               :   #3742fa or rgb(55, 66, 250)    (buttons, Icons, Links, lines & Backgrounds)
+        Steel Gray                  :   #41464b     (Headings)
+        Blue Bayoux                 :   #64707b     (paragraphs)
+        white                       :   #fff        (text with black backgrounds)
+        Black                       :   #000        ()
+        hover                       :   #ffa502 or rgb(255, 165, 2)     (hover)
+
+=================================================================================================================*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed';
+
+}
+
+body {
+
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed';
+}
+
+.videosection-container {
+
+    padding: 20px;
+}
+
+.videosection-container .main-video {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.videosection-container .main-video video {
+    width: 100vw;
+    height: 80vh;
+    border-radius: 10px;
+
+}
+
+.reply:hover {
+    background-color: rgb(32, 33, 25);
+    color: aliceblue;
+
+}
+
+
+
+
+
+.lists video {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.videosection-left-tophead {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(117, 116, 116);
+    align-items: center;
+    padding-inline: 5px;
+}
+
+.videosection-container .video-lists::-webkit-scrollbar {
+    width: 7px;
+}
+
+.videosection-container .video-lists::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.videosection-container .video-lists::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 50px;
+}
+
+.videosection-forms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(136, 135, 135);
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.videosection-forms-icons-serial {
+    width: 60px;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videosection-forms-text {
+    border: none;
+    border: aliceblue;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.videosection-forms-image {
+    height: 30px;
+    width: 30px;
+}
+
+.videosection-form-submit {
+    background-color: white;
+    border: 1px solid #41464b;
+    font-weight: 900;
+    font-size: 12px;
+    padding-inline: 8px;
+    padding-block: 3px;
+    border-radius: 10px;
+
+}
+
+.videosection-form-submit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #ffa502;
+
+}
+
+.video-action-btn {
+    background-color: white;
+    opacity: 0.8;
+    border: 1px solid #41464b;
+    font-weight: 900;
+    font-size: 15px;
+    padding-inline: 8px;
+    padding-block: 5px;
+    border-radius: 10px;
+
+}
+
+#videosection-playbtn {
+    font-size: 30px;
+    align-items: center;
+    border: aliceblue;
+}
+
+.videosection-review-react {
+    margin-right: 10px;
+}
+
+.videosection-review-react-reply {
+    border: none;
+    color: #3742fa;
+    padding-inline: 8px;
+    font-weight: 800;
+}
+
+.videosection-review-react-reply:hover {
+   
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 8px;
+}
+
+.videosection-action-button:hover {
+    cursor: pointer;
+    color: #ffa502;
+
+}
+
+.videosection-comment-section {
+    margin-top: 30px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videosection-comment-section-image {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.videosection-comment-area {
+    width: 90%;
+    margin-inline: auto;
+    display: block;
+}
+
+.videosection-comment-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.videosection-comment-submit-button {
+    margin-right: 10px;
+}
+
+#videosection-comment-clear {
+    padding-inline: 5px;
+    border-radius: 5px;
+}
+
+.videosection-review {
+
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.videosection-review-container {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    margin-top: 20px;
+}
+
+.videosection-review-container-inner {
+    display: flex;
+
+}
+
+.videosection-reviewer-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.videosection-comment-reactsection {
+    font-size: 18px;
+    padding-inline: 30px;
+    margin-bottom: 10px;
+}
+
+.videosection-review-text {
+    text-align: center;
+    padding-inline: 30px;
+}
+
+.videosection-video-details {
+    padding-inline: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.videosection-video-details-heading {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#videosection-reply-section{
+    width: 50vw;
+   margin-inline: auto;
+    display: none;
+    margin-bottom: 20px;
+}
+
+@media (max-width:991px) {
+    .videosection-container {
+
+        grid-template-columns: 2fr 1fr;
+
+        padding: 10px;
+    }
+
+    .videosection-container .main-video video {
+        width: 100vw;
+        height: auto;
+        border-radius: 10px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    .videosection-container {
+        grid-template-columns: 1fr;
+    }
+
+    .videosection-container .main-video {
+        width: 100vw;
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .videosection-container .video-lists {
+        background-color: #fff;
+        width: 100vw;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+/* sidebar */
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0px;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    top: auto;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+
+    left: 0;
+
+    background-color: #fff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 10px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+
+    text-decoration: none;
+
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.topicheadings {
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    padding: 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #3742fa;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    padding: 0;
+
+}
+
+/* The button used to open the sidebar */
+.openbtn,
+.closebtn {
+    display: blo;
+    border: 2px solid #41464b;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(15, 15, 15);
+    padding: 7px 10px;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.closebtn {
+    display: none;
+
+    color: #000;
+
+}
+
+.openbtn:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.closebtn:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.small-devices-playlists {
+    display: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    .videosection-container {
+        display: block;
+        padding: 20px;
+    }
+
+}
+
+/* smaller devices sidebar display none and show */
+
+@media screen and (max-width: 650px) {
+    .openbtn {
+        display: none;
+    }
+
+    .small-devices-playlists {
+        display: block;
+    }
+}
+
+
+.videosection-reviews {
+    width: 100%;
+    
+    border-bottom: 1px solid gray;
+}
+
+.video-action-btn:hover {
+    color: #fff;
+    background-color: #ffa502;
+}
+
+.video-action-btn:active {
+    background-color: #3742fa;
+    color: white;
+}
+
+.videosection-lower-part {
+    background-color: rgb(253, 255, 255);
+
+}
+
+.videosection-comment-area-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* nav css */
+
+
+.videosection-nav {
+
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+
+}
+
+.videosection-nav-link {
+
+    text-decoration: none;
+    display: inline-block;
+    color: #212529;
+
+}
+
+.videosection-nav-link:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #d0ebff;
+    border-bottom: 1px solid #000000
+}
+
+.videosection-nav-link.current {
+    border-bottom: 2px solid #070b0f;
+}
+
+@media (min-width: 768px) {
+
+    .videosection-nav-link {
+        padding: 10px 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .videosection-nav {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .videosection-nav-link {
+        padding-block: 5px;
+    }
+
+    .videosection-reviews {
+        width: 90vw;
+        margin-inline: auto;
+        border-bottom: 1px solid gray;
+    }
+
+}
+
+
+
+
+
+/* comment styles */
+
+.videosection-comment-container
+{
+width: 60vw;
+
+padding: 15px 10px;
+}
+
+.videosection-comment-text-area
+{
+height: 20px;
+width: 100%;
+border: none;
+border-Bottom: 2px solid #Aaa;
+background-color: Transparent;
+margin-bottom: 10px;
+resize: none;
+outline: none;
+transition: .5s
+}
+.videosection-comment-submit-button
+{
+padding: 10px 15px;
+border: none;
+outline: none;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="submit"]
+{
+color: #fff;
+background-color:#3742fa;
+}
+button
+{
+color: #333;
+background-color: transparent
+}
+
+
+/* accordion styles */
+
+.panel-group{
+    width: full;
+    margin-inline: auto;
+    border-bottom: 1px solid gray;
+}
+
+.panel-collapse{
+    background-color: #e7e5e5;
+}
+
+
+
+
+.topicheaddiv{
+    display: block;
+    justify-content: center;
+}
+
+.panel .panel-heading {
+    color: #333;
+    
+   
+   border-bottom: 1px soid gray;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.panel-heading.active, .btn:hover {
+    background-color: #3742fa;
+    color: white;
+ }
+.panel .panel-heading:hover {
+    color: rgb(255, 255, 255);
+    background-color: #ffa502;
+   border-bottom: 1px soid gray;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+
+
+/* Logic Class */
+.panel-title{
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.panel .panel-heading::after {
+    content: "\002B";
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.panel-heading.active::after {
+    content: "\2212";
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.panel-collapse {
+    display: none;
+}
+
+.panel-heading.active+.panel-collapse {
+    display: block;
+}
+
+
