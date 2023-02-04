@@ -656,3 +656,6 @@ background-color: transparent
 }
 
 
+.videosection-text-area-wordlimit{
+ justify-content: end;
+}
