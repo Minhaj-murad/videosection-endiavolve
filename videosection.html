@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		
 </head>
 
 <body>
@@ -30,10 +32,10 @@
 
 
 	<div class="videosection-container">
-		<div id="mySidebar" class="sidebar">
+		<div id="myvideosection-sidebar" class="videosection-sidebar">
 			<div class="videosection-sticky">
 				<div class="videosection-left-tophead">
-					<h1 class="topicheadings">Topics Name</h1>
+					<h1 class="videosection-topicheadings">Topics Name</h1>
 
 				</div>
 				<div class="">
@@ -898,8 +900,8 @@
 		</div>
 
 		<div id="main">
-			<button class="openbtn" id="openbutton" onclick="openNav()">&#9776; </button>
-			<button href="javascript:void(0)" id="closebutton" class="closebtn" onclick="closeNav()"><i
+			<button class="videosection-openbtn" id="openbutton" onclick="openNav()">&#9776; </button>
+			<button href="javascript:void(0)" id="closebutton" class="videosection-closebtn" onclick="closeNav()"><i
 					class="fa-solid fa-x closebuttontext"></i></button>
 			<div class="videosection-container">
 
@@ -908,7 +910,7 @@
 					<!--main video section starts-->
 					<div class="main-video ">
 						<div class="video">
-							<video class="vid1">
+							<video class="vid1" controls data-plyr='{ "quality": { "default": "default", "options": ["720p", "480p", "360p"] } }'>
 								<!-- Video files -->
 								<source src="./videos/video1.mp4" type="video/mp4" />
 
@@ -1855,7 +1857,7 @@
 
 									</div>
 									<div class="videosection-comment-btn">
-										<input class="videosection-comment-submit-button " type="submit"
+										<input class="videosection-comment-submit-button " type="submit" 
 											value='comment'>
 
 
@@ -2016,17 +2018,17 @@
 				'duration', // The full duration of the media
 				'mute', // Toggle mute
 				'volume', // Volume control
-				'captions', // Toggle captions
+				'captions', // Toggle captions,
 				'settings', // Settings menu
 				'pip', // Picture-in-picture (currently Safari only)
 				'airplay', // Airplay (currently Safari only)
-				'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+				// 'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
 				'fullscreen' // Toggle fullscreen
 			];
 
 		const player = new Plyr('.vid1', { controls });
 	</script>
-	<script src="./comment.js"></script>
+	
 	<style>
 		:root {
 			--plyr-color-main: #3742fa;
@@ -2091,18 +2093,18 @@
 	</script>
 
 	<script>
-		/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+		/* Set the width of the videosection-sidebar to 250px and the left margin of the page content to 250px */
 		function openNav() {
-			document.getElementById("mySidebar").style.width = "450px";
-			document.getElementById("main").style.marginLeft = "450px";
+			document.getElementById("myvideosection-sidebar").style.width = "350px";
+			document.getElementById("main").style.marginLeft = "350px";
 			document.getElementById("openbutton").style.display = "none";
 			document.getElementById("closebutton").style.display = "block";
 
 		}
 
-		/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+		/* Set the width of the videosection-sidebar to 0 and the left margin of the page content to 0 */
 		function closeNav() {
-			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("myvideosection-sidebar").style.width = "0";
 			document.getElementById("main").style.marginLeft = "0";
 			document.getElementById("openbutton").style.display = "block";
 			document.getElementById("closebutton").style.display = "none";

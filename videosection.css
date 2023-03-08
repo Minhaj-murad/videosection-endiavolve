@@ -48,21 +48,6 @@ body {
 
 }
 
-.reply:hover {
-    background-color: rgb(32, 33, 25);
-    color: aliceblue;
-
-}
-
-
-
-
-
-.lists video {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-}
 
 .videosection-left-tophead {
     display: flex;
@@ -161,6 +146,7 @@ body {
     color: #3742fa;
     padding-inline: 8px;
     font-weight: 800;
+    background-color: transparent;
 }
 
 .videosection-review-react-reply:hover {
@@ -306,10 +292,10 @@ body {
 
 
 
-/* sidebar */
+/* videosection-sidebar */
 
-/* The sidebar menu */
-.sidebar {
+/* The videosection-sidebar menu */
+.videosection-sidebar {
     height: 100%;
     /* 100% Full-height */
     width: 0px;
@@ -329,11 +315,11 @@ body {
     padding-top: 10px;
     /* Place content 60px from the top */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidebar */
+    /* 0.5 second transition effect to slide in the videosection-sidebar */
 }
 
-/* The sidebar links */
-.sidebar a {
+/* The videosection-sidebar links */
+.videosection-sidebar a {
 
     text-decoration: none;
 
@@ -342,7 +328,7 @@ body {
     transition: 0.3s;
 }
 
-.topicheadings {
+.videosection-topicheadings {
     text-align: center;
     font-size: larger;
     font-weight: 800;
@@ -350,12 +336,12 @@ body {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
+.videosection-sidebar a:hover {
     color: #3742fa;
 }
 
 /* Position and style the close button (top right corner) */
-.sidebar {
+.videosection-sidebar {
     position: fixed;
     top: 0;
     margin: auto;
@@ -363,9 +349,9 @@ body {
 
 }
 
-/* The button used to open the sidebar */
-.openbtn,
-.closebtn {
+/* The button used to open the videosection-sidebar */
+.videosection-openbtn,
+.videosection-closebtn {
     display: blo;
     border: 2px solid #41464b;
     font-size: 20px;
@@ -376,20 +362,20 @@ body {
     width: 50px;
 }
 
-.closebtn {
+.videosection-closebtn {
     display: none;
 
     color: #000;
 
 }
 
-.openbtn:hover {
+.videosection-openbtn:hover {
     border: 2px solid #fff;
     color: #fff;
     background-color: #ffa502;
 }
 
-.closebtn:hover {
+.videosection-closebtn:hover {
     border: 2px solid #fff;
     color: #fff;
     background-color: #ffa502;
@@ -408,11 +394,11 @@ body {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidebar {
+    .videosection-sidebar {
         padding-top: 15px;
     }
 
-    .sidebar a {
+    .videosection-sidebar a {
         font-size: 18px;
     }
 
@@ -423,10 +409,10 @@ body {
 
 }
 
-/* smaller devices sidebar display none and show */
+/* smaller devices videosection-sidebar display none and show */
 
 @media screen and (max-width: 650px) {
-    .openbtn {
+    .videosection-openbtn {
         display: none;
     }
 
@@ -559,17 +545,11 @@ border: none;
 outline: none;
 border-radius: 5px;
 cursor: pointer;
-}
-input[type="submit"]
-{
 color: #fff;
 background-color:#3742fa;
 }
-button
-{
-color: #333;
-background-color: transparent
-}
+
+
 
 
 /* accordion styles */
